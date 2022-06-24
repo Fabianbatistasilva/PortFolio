@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block 'title' %}Sobre{%endblock%}
+{%block 'sections'%}
+<div class="body_sobre">
+    <div class="conteudo_historia">
+        <div class="minha_historia">
+            <div class="programa_fabian">
+                <div class="title_historia">
+                    <h2>Historia na programação</h2>
+                </div>
+                <div class="texto_historia">
+                    <h4 for="">*Só sobre minha história dentro da programação (Será adicionado mais conteúdo através do tempo)
+                    </h4>
+                    <p>
+                        Como dito no <a href="{% url 'home'%}">Sobre mim</a> minha  história na programação se inicia em Agosto de 2021 no Curso <a target="_blank" href="https://www.jovemprogramador.com.br/">Jovem Programador</a>,
+                        neste cursos aprendemos <Strong>Python,CSS,Html e Django</Strong> mais quando fomos para o projeto final me desafiei no <strong>JavaScript</strong>
+                    </p>
+                    <span class="participe_historia">
+                        <label for="enviar_oferta_sobre">Caso queira participar da minha história:</label>
+                        <a class="enviar_oferta_sobre" href="{% url 'oferta' %}">Enviar Oferta</a>
+                    </span>
+                </div>
+            </div>
+            <div class="img_foto_fabian">
+                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQH8PJsVq3GQWg/profile-displayphoto-shrink_200_200/0/1653143707218?e=1661385600&v=beta&t=nNn7hITU_ksWwz7ZdLz-BsWVQ1htUC9qtzKnAI3gh4Q" alt="">
+            </div>
+        </div>
+        <div class="formas_de_contatos">
+            <div class="redes_sociais">
+                <nav class="social">
+                    <ul>
+                        <li id='gmail_list' onmouseout="saiu_da_rede(this.id)" onmouseover="redes_hover(this.id)" class="icon_gmail_sobre"><a id="gmail_id" >Gmail <i class="fa-solid fa-envelopes-bulk"></i></a></li>
+                        <li id='git_list'  onmouseout="saiu_da_rede(this.id)" onmouseover="redes_hover(this.id)" class="icon_github_sobre"><a target="_blank"  id="git_id" href="https://github.com/Fabianbatistasilva">Github <i class="fab fa-github"></i></a></li>
+                        <li id='linkedin_list' onmouseout="saiu_da_rede(this.id)" onmouseover="redes_hover(this.id)"  class="icon_linkedin_sobre"><a  target="_blank" id="linkedin_id" href="https://www.linkedin.com/in/fabian-batista-965420214/">Linkedin <i class="fab fa-linkedin"></i></a></li>
+                        <li id='instagram_list' onmouseout="saiu_da_rede(this.id)" onmouseover="redes_hover(this.id)" class="icon_instagram_sobre"><a target="_blank" id="instagram_id"  href="https://www.instagram.com/fabian_batista_silva">Instagram <i class="fab fa-instagram"></i></a></li>
+                        <li id='Telefone_list'  onmouseout="saiu_da_rede(this.id)" onmouseover="redes_hover(this.id)" class="icon_telefone_sobre"><a  id="Telefone_id"  >Telefone <i class="fa-solid fa-mobile-button"></i></li>
+                        <li id="facebook_list"  onmouseout="saiu_da_rede(this.id)" onmouseover="redes_hover(this.id)" class="icon_facebook_sobre"><a target="_blank" id="facebook_id"   href="https://www.facebook.com/fabian.batista.146/">Facebook <i class="fab fa-facebook-f"></i></li>
+                        <li id='localiza_list'  onmouseout="saiu_da_rede(this.id)" onmouseover="redes_hover(this.id)"  class="icon_localiza_sobre"><a id="localiza_id" >Localização <i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}

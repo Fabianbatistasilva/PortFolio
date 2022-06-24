@@ -1,0 +1,209 @@
+.body_form_oferta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/originals/e7/be/af/e7beafa367ad5c5d858c7f6d301e2c60.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-bottom: 1rem;
+}
+.form_email{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+.conteudo_email{
+    width: 40%;
+    padding: 1rem;
+    height: 85%;
+    background: rgba(0, 0, 0, 0.750);
+    border-radius: 5px;
+    border: 1px solid rgba(255, 149, 0, 0.376);
+}
+.form_oferta{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.title_form > h2{
+    color: rgba(255, 149, 0, 0.665);
+    font-weight: 900;
+}
+.inputs_form_oferta{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.inputs_form_oferta > label{
+    color: rgba(255, 149, 0, 0.800);
+    font-weight: 900;
+}
+.inputs_form_oferta > textarea{
+    width: 40%;
+    text-align: center;
+    overflow-y: scroll;
+    font-size: 18px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.inputs_form_oferta > input,.tipodevaga > input{
+    width: 40%;
+    text-align: center;
+    appearance: none;
+    height: 22px;
+    font-size: 16px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.tipodevaga{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.tipodevaga > label{
+    color: rgba(255, 149, 0, 0.800);
+    font-weight: 900;
+}
+.button_form{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_form > button{
+    width: 40%;
+    padding: 5px;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(255, 149, 0, 0.665);
+    border-radius: 5px;
+}
+@keyframes button_enviar_sobre {
+    0% {
+      background:rgba(255, 255, 255, 0.729) ;
+      color: rgba(255, 149, 0, 0.376) ;
+      border: black solid 0.5px;
+    }
+    50% {
+      background: rgba(255, 149, 0, 0.376);
+      color:black ;
+      border: white solid 0.5px;
+    }
+    100% {
+      background:rgba(255, 255, 255, 0.729) ;
+      color: black ;
+      border: rgba(255, 149, 0, 0.376) solid 0.5px;
+    }
+  }
+.button_form > button:hover{
+    transition: 0.5s;
+    box-shadow: black 10px 10px 0;
+    animation: button_enviar_sobre 1s infinite 0.4s;
+  }
+
+.messages{
+    width:95vh;
+    height: 20px;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.success{
+    width: 85%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 149, 0, 0.565);
+    padding: 1rem;
+    color: white;
+    border: 1px white solid;
+    font-size: 20px;
+    font-weight: 500;
+}
+.info{
+    width: 85%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.624);
+    padding: 1rem;
+    color: white;
+    border: 1px white solid;
+    font-size: 20px;
+    font-weight: 500;
+}
+@media (max-width:1100px){
+    .form_email{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+        margin-top: 0px;
+    }
+    .conteudo_email{
+        width: 90%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.750);
+        border-radius: 5px;
+        border: 1px solid rgba(255, 149, 0, 0.376);
+    }
+    .messages{
+        width:90vh;
+    }
+    .success{
+        width: 80%;
+    }
+    .info{
+        width: 80%;
+        height: 100%;
+    }
+    .button_form{
+        height: 55px;
+        margin-top: 20px;
+    }
+    .button_form > button{
+        height: 100%;
+    }
+    .tipodevaga{
+        width: 100%;
+        height: 100%;
+        gap: 15px;
+    }
+    .inputs_form_oferta{
+        gap: 15px;
+    }
+    .inputs_form_oferta > label,.tipodevaga > label{
+        color: rgba(255, 149, 0, 0.800);
+        font-weight: 900;
+        font-size: 18px;
+    }
+    .inputs_form_oferta > input,.tipodevaga > input{
+        width: 50%;
+        height: 30px;
+    }
+    .inputs_form_oferta > textarea{
+        width: 60%;
+    }
+}

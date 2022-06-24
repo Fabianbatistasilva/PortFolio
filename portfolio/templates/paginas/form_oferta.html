@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block 'title' %}OFERTA{%endblock%}
+{%block 'sections'%}
+<div class="body_form_oferta">
+    {% if messages %}
+    <div class="messages">
+        {% for message in messages %}
+        <label {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</label>
+        {% endfor %}
+    </div>
+    {% endif %}
+    <div class="form_email">
+        <div class="conteudo_email">
+            <form method="post" class="form_oferta" action="">{% csrf_token %}
+                <div class="title_form">
+                    <h2>Enviar Oferta Pelo Email</h2>
+                </div>
+                <div class="inputs_form_oferta">
+                    <label for="nome_id">Nome da Empresa*</label>
+                    <input name="nomeEmpresa" id="nome_id" required="True" placeholder="Nome da Empresa" type="text">
+                    <label for="cargo_id">Cargo*</label>
+                    <input name="cargo" id="cargo_id" required="True" placeholder="Cargo" type="text">
+                    <label for="Email">Email</label>
+                    <input name="EmailEmpresa" id="Email"  placeholder="Nome da Empresa" type="email">
+                    <label for="localizar_id">Localização</label>
+                    <input list="localizar" type="text" name="localizar" id="localizar_id" placeholder="Coloque sua localização">
+                    <datalist id="localizar">
+                        {%for localiza in local%}
+                        <option value="{{localiza.nome}}"></option>
+                        {%endfor%}
+                    </datalist>
+                    <textarea minlength="5" maxlength="255" placeholder="Descrição da Vaga" name="descricao_vaga" id="descricao_id" cols="50" rows="10"></textarea>
+                    <label for="salario_id">Salario</label>
+                    <input id="salario_id" name="salario_vaga" min="0" type="number" placeholder="Oferta de Salario">
+                    <div class="tipodevaga">
+                        <label for="">Tipo de Vaga</label>
+                        <input name="contato_vaga" placeholder="Contrato" list="tempo" type="text">
+                        <datalist id="tempo">
+                            <option value="Tempo integral"></option>
+                            <option value="Meio Periodo"></option>
+                            <option value="Contrato"></option>
+                        </datalist>
+                        <input name="tipo_vaga" placeholder="Tipo" list="tipo" type="text">
+                        <datalist id="tipo">
+                            <option value="Presencial"></option>
+                            <option value="Remoto"></option>
+                            <option value="Hibrido"></option>
+                        </datalist>
+                    </div>
+                </div>
+                <div class="button_form">
+                    <button type="submit">Enviar Oferta</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{%endblock%}

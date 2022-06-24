@@ -1,0 +1,255 @@
+.body_sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/originals/e7/be/af/e7beafa367ad5c5d858c7f6d301e2c60.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.conteudo_historia{
+    display: grid;
+    margin-top: 1rem;
+    width: 95%;
+    height: 25rem;
+    grid-template-areas: 'historia historia redes';
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem;
+    padding: 15px;
+}
+.minha_historia{
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-area: historia;
+  background:rgba(0, 0, 0, 0.750);
+  color: white;
+  padding-left: 10px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 'conteudo conteudo img_foto';
+  border-radius: 1rem;
+}
+
+
+.programa_fabian{
+  width: 95%;
+  height: 100%;
+  grid-area: conteudo;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.img_foto_fabian{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  grid-area: img_foto;
+  background: rgba(255, 149, 0, 0.376);
+  align-items: center;
+  justify-content: center;
+}
+.img_foto_fabian > img{
+  width: 85%;
+  height: 60%;
+  border-radius: 1rem;
+  border: white 1px solid;
+}
+.title_historia{
+  width: 100%;
+}
+.texto_historia{
+  width: 100%;
+  color: white;
+  font-size: 1rem;
+  padding-right: 1rem;
+}
+.texto_historia p a{
+  color: white;
+  text-decoration:none;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+.participe_historia{
+  display: flex;
+  flex-direction: column;
+}
+.enviar_oferta_sobre{
+  width: 50%;
+  text-align:center;
+  padding:0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color:white;
+  text-decoration: none;
+  background: rgba(255, 149, 0, 0.376);
+  margin-left: 1rem;
+  border: white solid 1px;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+@keyframes button_enviar_sobre {
+  0% {
+    background:rgba(255, 255, 255, 0.729) ;
+    color: rgba(255, 149, 0, 0.376) ;
+    border: black solid 0.5px;
+  }
+  50% {
+    background: rgba(255, 149, 0, 0.376);
+    color:black ;
+    border: white solid 0.5px;
+  }
+  100% {
+    background:rgba(255, 255, 255, 0.729) ;
+    color: black ;
+    border: rgba(255, 149, 0, 0.376) solid 0.5px;
+  }
+}
+.enviar_oferta_sobre:hover{
+  transition: 0.5s;
+  box-shadow: black 10px 10px 0;
+  animation: button_enviar_sobre 1s infinite 0.4s;
+}
+.formas_de_contatos{
+    width: 100%;
+    height: 100%;
+    grid-area: redes;
+    background:rgba(0, 0, 0, 0.750);
+    color: white;
+    border-radius: 1rem;
+}
+.redes_sociais{
+    width: 100%;
+    
+}
+.social{
+    top: 20px;
+}
+.social ul {
+    padding: 0px;
+    transform: translate(0px, 0);
+    margin-top: 3rem;
+}
+.social ul li {
+    display: block;
+    margin: 5px;
+    background: rgba(255, 149, 0, 0.376);
+    width: 50%;
+    text-align: right;
+    padding: 10px;
+    border-radius: 0 30px 30px 0;
+    transition: all 1s;
+    text-align: center;
+}
+.social ul li:hover {
+    transform: translate(110px, 0);
+    background: rgba(255, 255, 255, 0.4);
+  }
+.social ul #gmail_list:hover {
+    transform: translate(110px, 0);
+    background-color: rgba(165, 42, 42, 0.548);
+    overflow-x: scroll;
+  }
+.social ul li:hover a {
+    color: #000;
+    text-decoration: none;
+  }
+.social ul li:hover i {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.36);
+    transform: rotate(360deg);
+    transition: all 1s;
+  }
+.social ul li a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+.social ul li i {
+    margin-left: 10px;
+    color: #000;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    background: #ffffff;
+    transform: rotate(0deg);
+  }
+  .social ul .icon_gmail_sobre:hover{
+    background-color: rgba(165, 42, 42, 0.548);
+    color: #ffffff;
+    border-radius: 20px;
+  }
+  .social ul .icon_github_sobre:hover{
+    background-color: rgb(19, 18, 18);
+    border-radius: 20px;
+  }
+  .social ul .icon_facebook_sobre:hover{
+    background: #1876f283;
+    border-radius: 20px;
+  }
+  .social ul .icon_linkedin_sobre:hover{
+    background: #1876f283;
+    border-radius: 20px;
+  }
+  .social ul .icon_instagram_sobre:hover{
+    background: #e4405e8f;
+    border-radius: 20px;
+  }
+  .social ul .icon_telefone_sobre:hover{
+    background: rgba(194, 26, 149, 0.392);
+    border-radius: 20px;
+  }
+  .social ul .icon_localiza_sobre:hover{
+    background:#33b8646c;
+    border-radius: 20px;
+  }
+@media (max-width:636px){
+  .minha_historia{
+    display: grid;
+    width: 90%;
+    height: 100%;
+    grid-area: historia;
+    background:rgba(0, 0, 0, 0.750);
+    color: white;
+    padding-left: 10px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 'conteudo conteudo conteudo';
+    border-radius: 1rem;
+  }
+  .img_foto_fabian{
+    display: none;
+    width: 100%;
+    height: 100%;
+    grid-area: img_foto;
+    background: rgba(255, 149, 0, 0.376);
+    align-items: center;
+    justify-content: center;
+  }
+
+}
+@media (max-width:1270px){
+  .social ul li:hover {
+    transform: translate(50px, 0);
+  }
+  .social ul #gmail_list:hover {
+    transform: translate(50px, 0);
+    overflow-x: scroll;
+  }
+}
+@media (max-width:600px){
+  .social ul li:hover {
+    transform: translate(30px, 0);
+  }
+  .social ul #gmail_list:hover {
+    transform: translate(30px, 0);
+    overflow-x: scroll;
+  }
+}
