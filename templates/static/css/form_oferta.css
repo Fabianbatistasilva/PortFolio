@@ -4,10 +4,9 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    background: rgb(245,245,245);
+    background: linear-gradient(90deg, rgba(245,245,245,1) 2%, rgba(0,0,0,0.8785889355742297) 54%, rgba(101,101,101,1) 92%);
     height: 100%;
-    background-image: url('https://i.pinimg.com/originals/e7/be/af/e7beafa367ad5c5d858c7f6d301e2c60.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
     padding-bottom: 1rem;
 }
 .form_email{
@@ -24,7 +23,7 @@
     height: 85%;
     background: rgba(0, 0, 0, 0.750);
     border-radius: 5px;
-    border: 1px solid rgba(255, 149, 0, 0.376);
+    border: 1px solid #006bb3;
 }
 .form_oferta{
     width: 100%;
@@ -33,7 +32,7 @@
     flex-direction: column;
 }
 .title_form > h2{
-    color: rgba(255, 149, 0, 0.665);
+    color: #0099ff;
     font-weight: 900;
 }
 .inputs_form_oferta{
@@ -46,7 +45,7 @@
     gap: 5px;
 }
 .inputs_form_oferta > label{
-    color: rgba(255, 149, 0, 0.800);
+    color: #0099ff;
     font-weight: 900;
 }
 .inputs_form_oferta > textarea{
@@ -76,7 +75,7 @@
     gap: 5px;
 }
 .tipodevaga > label{
-    color: rgba(255, 149, 0, 0.800);
+    color: #0099ff;
     font-weight: 900;
 }
 .button_form{
@@ -91,24 +90,24 @@
     padding: 5px;
     font-size: 18px;
     color: white;
-    background-color: rgba(255, 149, 0, 0.665);
+    background-color: #0099ff;
     border-radius: 5px;
 }
 @keyframes button_enviar_sobre {
     0% {
       background:rgba(255, 255, 255, 0.729) ;
-      color: rgba(255, 149, 0, 0.376) ;
+      color: #0099ff ;
       border: black solid 0.5px;
     }
     50% {
-      background: rgba(255, 149, 0, 0.376);
+      background: #0099ff;
       color:black ;
       border: white solid 0.5px;
     }
     100% {
       background:rgba(255, 255, 255, 0.729) ;
       color: black ;
-      border: rgba(255, 149, 0, 0.376) solid 0.5px;
+      border: #0099ff solid 0.5px;
     }
   }
 .button_form > button:hover{
@@ -133,7 +132,7 @@
     text-align: center;
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 149, 0, 0.565);
+    background-color: #006bb3;
     padding: 1rem;
     color: white;
     border: 1px white solid;
@@ -167,7 +166,7 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.750);
         border-radius: 5px;
-        border: 1px solid rgba(255, 149, 0, 0.376);
+        border: 1px solid #006bb3;
     }
     .messages{
         width:90vh;
@@ -195,7 +194,7 @@
         gap: 15px;
     }
     .inputs_form_oferta > label,.tipodevaga > label{
-        color: rgba(255, 149, 0, 0.800);
+        color: #0099ff;
         font-weight: 900;
         font-size: 18px;
     }

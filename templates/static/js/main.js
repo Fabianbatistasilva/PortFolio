@@ -32,7 +32,7 @@ function redes_hover(local){
             break;
         case 'Telefone_list':
             let telefone =  document.getElementById('Telefone_id');
-            telefone.innerHTML='(48) 99173-2178 ';
+            telefone.innerHTML=' (48) 98854-2989 ';
             telefone.style.color='white';
             break;    
         case 'localiza_list':

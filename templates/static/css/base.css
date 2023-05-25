@@ -12,7 +12,7 @@ body{
     background-color: black;
     height:5rem;
     font-size: 20px;
-    border-bottom: 1.7px solid rgba(255, 149, 0, 0.376);
+    border-bottom: 1.7px solid #006bb3;
 }
 
 .nav_bar_base > nav > .opc_nav{
@@ -52,7 +52,7 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 3px rgba(255, 149, 0, 0.376) solid;
+    border: 3px #006bb3 solid;
 }
 .logo_fabian{
     display: flex;
@@ -60,7 +60,7 @@ body{
     margin-left: 5rem;
 }
 .logo_fabian > a{
-    color: rgba(255, 149, 0, 0.376);
+    color:  #006bb3;
     text-decoration: none;
     font-family: 'Great Vibes', cursive  ;
 }
@@ -69,6 +69,7 @@ body{
 }
 .logo_fabian > a >h2{
     border-bottom:1.5px solid white;
+    color: #006bb3;
 }
 .burger_detls{
     display: none;
@@ -89,7 +90,7 @@ body{
     list-style: none;
     font-size:42px;
     background-color:rgba(0, 0, 0, 0.456) ;
-    color:rgba(255, 149, 0, 0.376);
+    color:#006bb3;
     padding:2px;
 }
 .burger_detls > a{
@@ -101,15 +102,14 @@ body{
     color:white;
     text-decoration: none;
     position: relative;
-    background-color:rgba(0, 0, 0, 0.456) ;
-
+    background-color:rgba(0, 0, 0, 0.500) ;
 }
 .burger_detls > a:hover{
-    color:rgba(255, 149, 0, 0.376);
+    color:#0090f0;
 }
 @keyframes nav_hover {
     0% {
-        color: rgba(255, 149, 0, 0.376);
+        color: #006bb3;
         border-bottom: 2px solid white;
     }
     50% {
@@ -143,7 +143,7 @@ body{
         margin-left: 5rem;
     }
     .logo_fabian > a{
-        color: rgba(255, 149, 0, 0.376);
+        color: #006bb3;
         text-decoration: none;
         font-family: 'Great Vibes', cursive  ;
         display: none;

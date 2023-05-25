@@ -3,10 +3,9 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    background: rgb(245,245,245);
+    background: linear-gradient(90deg, rgba(245,245,245,1) 2%, rgba(0,0,0,0.8785889355742297) 54%, rgba(101,101,101,1) 92%);
     height: 100vh;
-    background-image: url('https://i.pinimg.com/originals/e7/be/af/e7beafa367ad5c5d858c7f6d301e2c60.jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 .conteudo_historia{
     display: grid;
@@ -48,7 +47,7 @@
   width: 100%;
   height: 100%;
   grid-area: img_foto;
-  background: rgba(255, 149, 0, 0.376);
+  background: #006bb3;
   align-items: center;
   justify-content: center;
 }
@@ -85,7 +84,7 @@
   padding-right: 1rem;
   color:white;
   text-decoration: none;
-  background: rgba(255, 149, 0, 0.376);
+  background: #006bb3;
   margin-left: 1rem;
   border: white solid 1px;
   border-radius: 5px;
@@ -137,7 +136,7 @@
 .social ul li {
     display: block;
     margin: 5px;
-    background: rgba(255, 149, 0, 0.376);
+    background: #006bb3;
     width: 50%;
     text-align: right;
     padding: 10px;
