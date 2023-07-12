@@ -23,7 +23,7 @@ def sobre(request):
 
 
 def oferta(request):
-    local = requests.get('https://servicodados.ibge.gov.br/api/v1/localidades/municipios' , verify=True, ssl_context=ssl_context).json()
+    local = requests.get('https://servicodados.ibge.gov.br/api/v1/localidades/municipios', verify=True, cert=None, timeout=None, allow_redirects=False, cookies=None, stream=None, proxies=None, hooks=None, params=None, auth=None, headers=None, json=None, ssl_context=ssl_context).json()
     if request.method=='POST':
         Empresa = request.POST.get('nomeEmpresa')
         Cargo = request.POST.get('cargo')
