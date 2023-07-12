@@ -30,22 +30,22 @@ def oferta(request):
         Salario = request.POST.get('salario_vaga')
         if Empresa =='' and Cargo =='' and Local =='' and Descricao =='' and Salario =='':
             messages.add_message(request,messages.INFO,f'Erro,Campo estão vazios')
-            return render(request,'paginas/form_oferta.html',{'local':local})
+            return render(request,'paginas/form_oferta.html',{})
         if Cargo.isalpha()==False:
             messages.add_message(request,messages.INFO,f'Erro, Cargo só aceita letras')
-            return render(request,'paginas/form_oferta.html',{'local':local})
+            return render(request,'paginas/form_oferta.html',{})
         if Cargo.isspace()==True :
             messages.add_message(request,messages.INFO,f'Erro, Cargo com valor invalido')
-            return render(request,'paginas/form_oferta.html',{'local':local})
+            return render(request,'paginas/form_oferta.html',{})
         if Empresa.isspace() :
             messages.add_message(request,messages.INFO,f'Erro, Empresa com valor invalido')
-            return render(request,'paginas/form_oferta.html',{'local':local})
+            return render(request,'paginas/form_oferta.html',{})
         if Salario.isdecimal()==False:
             messages.add_message(request,messages.INFO,'Erro, Descrição com valor invalido')
-            return render(request,'paginas/form_oferta.html',{'local':local})
+            return render(request,'paginas/form_oferta.html',{})
         if Salario.isspace()==True :
             messages.add_message(request,messages.INFO,f'Erro, Salario com valor invalido')
-            return render(request,'paginas/form_oferta.html',{'local':local})
+            return render(request,'paginas/form_oferta.html',{})
         else:
             Contrato =  request.POST.get('contato_vaga')
             Tipo =  request.POST.get('tipo_vaga')
@@ -56,4 +56,4 @@ def oferta(request):
             para_email=['currifabianbatista@gmail.com']
             send_mail(title,message,email_enviado,para_email,fail_silently=False,)
             messages.add_message(request,messages.SUCCESS,'Enviou com Sucesso,Oferta foi enviada para o Email do Fabian')
-    return render(request,'paginas/form_oferta.html',{'local':local})
+    return render(request,'paginas/form_oferta.html',{})
