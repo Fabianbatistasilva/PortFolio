@@ -4,7 +4,6 @@ import requests
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.contrib.auth.models import User
-import ssl
 
 # Create a custom SSL context
 
@@ -23,11 +22,6 @@ def sobre(request):
 
 
 def oferta(request):
-    ssl_context = ssl.create_default_context()
-    ssl_context.options |= ssl.OP_NO_RENEGOTIATION
-    ssl_context.options |= ssl.OP_NO_TLSv1
-    ssl_context.options |= ssl.OP_NO_TLSv1_1
-    local = requests.get('https://servicodados.ibge.gov.br/api/v1/localidades/municipios', verify=False, cert=None, timeout=None, allow_redirects=False, cookies=None, stream=None, proxies=None, hooks=None, params=None, auth=None, headers=None, json=None, ssl_context=ssl_context).json()
     if request.method=='POST':
         Empresa = request.POST.get('nomeEmpresa')
         Cargo = request.POST.get('cargo')

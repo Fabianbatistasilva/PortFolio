@@ -25,11 +25,6 @@
                     <input name="EmailEmpresa" id="Email"  placeholder="Nome da Empresa" type="email">
                     <label for="localizar_id">Localização</label>
                     <input list="localizar" type="text" name="localizar" id="localizar_id" placeholder="Coloque sua localização">
-                    <datalist id="localizar">
-                        {%for localiza in local%}
-                        <option value="{{localiza.nome}}"></option>
-                        {%endfor%}
-                    </datalist>
                     <textarea minlength="5" maxlength="255" placeholder="Descrição da Vaga" name="descricao_vaga" id="descricao_id" cols="50" rows="10"></textarea>
                     <label for="salario_id">Salario</label>
                     <input id="salario_id" name="salario_vaga" min="0" type="number" placeholder="Oferta de Salario">
