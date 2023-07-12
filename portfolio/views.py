@@ -8,7 +8,7 @@ import ssl
 
 # Create a custom SSL context
 ssl_context = ssl.create_default_context()
-ssl_context.options |= ssl.OP_LEGACY_RENEGOTIATION
+ssl_context.options |= ssl.OP_NO_RENEGOTIATION
 
 def home(request):
     return render(request,'paginas/home.html')
@@ -23,7 +23,7 @@ def sobre(request):
 
 
 def oferta(request):
-    local = requests.get('https://servicodados.ibge.gov.br/api/v1/localidades/municipios' verify=True, ssl_context=ssl_context).json()
+    local = requests.get('https://servicodados.ibge.gov.br/api/v1/localidades/municipios' , verify=True, ssl_context=ssl_context).json()
     if request.method=='POST':
         Empresa = request.POST.get('nomeEmpresa')
         Cargo = request.POST.get('cargo')
