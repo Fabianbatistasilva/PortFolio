@@ -5,6 +5,8 @@ body{
     background: linear-gradient(90deg, rgba(245,245,245,1) 2%, rgba(0,0,0,0.8785889355742297) 54%, rgba(101,101,101,1) 92%);
 }
 
+/* Estilo quando o mouse estiver sobre os links */
+
 .nav_bar_base,.nav_bar_base > nav{
     display:flex;
     align-items: center;

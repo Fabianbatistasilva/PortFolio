@@ -1,131 +1,151 @@
-{% extends 'base.html' %}
 {% load static %}
-{%block 'title' %}Home{%endblock%}
-{%block 'sections'%}
-<div class="body_home">
-    <div  class="sobre_fabian">
-        <div class="conteudo_sobre">
-            <div class="title_sobre">
-                <h1>Sobre Mim</h1>
-            </div>
-            <div class="texto_sobre">
-                <p>
-                    Olá me chamo <strong>Fabian Batista da Silva</strong>, nasci em Santo Amaro da Imperatriz mas desde de pequeno moro na Palhoça(SC).
-                    Gosto de falar que minha historia inicia em Outubro de 2019 pois quando dei um passo que mudou minha vida.
-                    Iniciei numa academia próxima de casa, quando me matriculei fomos se pesar, ali bateu uma realidade, eu estava
-                    com <strong>110kgs</strong>  com 1,65 de altura aos 16 anos de idade.
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="pt">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta name="keywords" content="F​abian Batista da Silva">
+        <meta name="description" content="">
+        <title>Página Inicial</title>
+        <link rel="stylesheet" href="//capp.nicepage.com/09e164cd7fb184d254ee46ac44087625d18d3a58/nicepage.css" media="screen">
+        <link rel="stylesheet" href="{% static '/css/nicepage.css' %}">
+        <script class="u-script" type="text/javascript" src="//capp.nicepage.com/assets/jquery-3.5.1.min.js" defer=""></script>
+        <script class="u-script" type="text/javascript" src="//capp.nicepage.com/09e164cd7fb184d254ee46ac44087625d18d3a58/nicepage.js" defer=""></script>
+        <meta name="generator" content="Nicepage 5.13.1, nicepage.com">
+        <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+        <script type="application/ld+json">
+            {
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"sameAs": [
+				"https://www.facebook.com/fabian.batista.146/",
+				"https://twitter.com/FabianSilvaDev",
+				"https://www.instagram.com/fabian_batista_silva/",
+				"https://www.linkedin.com/in/fabian-batista-965420214/"
+		]
+}
+        </script>
+        <meta name="theme-color" content="#478ac9">
+        <meta name="twitter:site" content="@">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Página Inicial">
+        <meta name="twitter:description" content="">
+        <meta property="og:title" content="Página Inicial">
+        <meta property="og:type" content="website">
+    </head>
+    <body data-home-page="Página-Inicial.html" data-home-page-title="Página Inicial" class="u-body u-xl-mode" data-lang="pt">
+        {% include 'nav.html' %}
+        <section class="u-align-center u-clearfix u-palette-1-light-3 u-section-1" id="carousel_12cc">
+            <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+                <img class="u-border-8 u-border-palette-5-dark-2 u-image u-image-circle u-image-1" src="https://assets.nicepagecdn.com/dc7a5949/5383162/images/minhafoto.jpg" alt="" data-image-width="400" data-image-height="400" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
+                <h1 class="u-align-center u-text u-text-palette-1-base u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">F​abian Batista da Silva</h1>
+                <p class="u-align-center u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                    Resumo das Experiências Profissionais: <br>
+                    <br>
+                    Tenho um ano de experiência como auxiliar de suporte técnico em equipamentos de topografia. Durante esse período, adquiri conhecimentos práticos e habilidades relacionadas ao suporte técnico, lidando com a resolução de problemas e assistência aos clientes. <br>
+                    <br>
+                    Além disso, tive a oportunidade de aplicar meus conhecimentos em informática e programação, especialmente durante meu curso de Jovem Programador no Senac-Palhoça. Durante o curso, desenvolvi projetos em equipe, utilizando linguagens como Python, Django, HTML, CSS e JavaScript, o que contribuiu para aprimorar minhas habilidades de desenvolvimento web. <br>
+                    <br>Minhas experiências profissionais me permitiram desenvolver competências valiosas, como trabalho em equipe, resolução de problemas e adaptabilidade. Estou entusiasmado em continuar crescendo profissionalmente e explorando novas oportunidades que me permitam utilizar minhas habilidades e conhecimentos adquiridos até o momento.
+        
                 </p>
-                <p>
-                    Mas por que isso mudou minha vida? pois isto mudou minha mentalidade e assim todo mês era uns 5 kgs a menos,
-                    este desafio me fez estudar tudo sobre nutrição, os benefícios que obtive ao me desafio me trazem lucro até hoje pois era um jovem viciado em jogos online,
-                    e hoje não consigo nem entrar num, pois enjoou rápido deles. Neste momento já estava fazendo Informática avançada na Prepara cursos, mas logo no inicio de 
-                    2020 veio uma grande onda de infestação da Covid-19, já tinha perdido uns 18 kgs estava alegre comigo mesmo, foi quando reparei que não ia conseguir ficar parado em casa,
-                    aproveitei que a minha casa tinha escada e descia nela durante 1 hora todo dia, durante 350 dias, em julho de 2020 termino meu curso de Informática.
-
-                </p>
-                <p>
-                    Em fevereiro de 2021 retorno a escola já no terceirão numa experiencia muita estranha ainda com mascaras e distanciamento social,
-                    Quando vi que todo dia seria um risco ir para a escola, topei outro e retornei a academia, quando fui me pesar lá estava eu com 77 kgs (tomei um susto pois fazia uns 2 anos que não me pesava).
-                    Agora vamos para Inicio da minha trajetória na programação, no dia 1 de Agosto de 2021 , curso do Senac-Palhoça que ofereceu um curso gratuito para jovens com baixa renda
-                    que seria separado em 2 módulos, o nome deste curso é <a target="_blank" href="https://www.jovemprogramador.com.br/">Jovem Programador</a>.
-                </p>
-                <p>
-                    No primeiro mês tivemos conteúdo sobre <strong>lógica da programação</strong> , e iniciamos utilizando o <strong> Python</strong>,continuamos estudando Python até final de setembro,
-                    quando tivemos uma introdução ao <strong>QTDesigns</strong> ,depois de todos os fundamentos do QT iniciamos um projeto em dupla, neste projeto tivemos 1 mês e meio
-                    para terminados e apresenta-lo na sala. Já no modulo 2 foi redirecionado para Web, então aproveitamos nossa fundamentos em Python e utilizamos o 
-                    framework <strong>Django além de CSS e HTML</strong> , Neste modulo aprofundamos o framework até o limite e assim ficamos apto para fazer um projeto final.
-
-                </p>
-                <p>
-                    Neste projeto realizado em 3 semanas em um grupo de 3 pessoas, criamos uma <strong>API da tabela TACO</strong> ,
-                    mas logo vimos que só o Python não seria o suficiente para temos um projeto completo, então assumo o compromisso de aprender o <strong>JavaScript</strong>
-                    e obter funcionalidades com usuário através da árvore da Web no site <strong>(HTML,CSS,JavaScript)</strong> , no dia 8 de Junho era o grande dia da entrega, 
-                    tivemos que fazer um slide e apresenta-lo para os cursados em análise de desenvolvimento, este site não esta disponível pois temos um projeto para melhoramos e vende-lo.
-
-                </p>
-                <p>
-                    Hoje com o curso finalizado estou em buscar da minha primeira vaga na área 
-                </p>
-                <label for="">Redes Sociais </label>
-                <hr class="hr_redes">
-                <ul class="wrapper">
-                    <li class="icon twitter">
-                      <a target="_blank" class="link_linkedlin" href="https://www.linkedin.com/in/fabian-batista-965420214/">
-                        <span class="tooltip">Linkedlin</span>
-                        <span><i class="fa-brands fa-linkedin-in"></i></span>
-                      </a>
-                    </li>
-                    <li class="icon instagram">
-                        <a target="_blank" class="link_instagram"  href="https://www.instagram.com/fabian_batista_silva">
-                            <span class="tooltip">Instagram</span>
-                            <span><i class="fab fa-instagram"></i></span>
-                        </a>
-                    </li>
-                    <li class="icon github">
-                        <a target="_blank" class="link_github"  href="https://github.com/Fabianbatistasilva">
-                            <span class="tooltip">Github</span>
-                            <span><i class="fab fa-github"></i></span>
-                        </a>  
-                    </li>
-                    <li class="icon facebook">
-                        <a target="_blank" class="link_facebook"  href="https://www.facebook.com/fabian.batista.146/">
-                          <span class="tooltip">Facebook</span>
-                          <span><i class="fab fa-facebook-f"></i></span>
-                        </a>
-                    </li>
-                  </ul>
+                <div class="u-align-center u-container-align-center-md u-container-align-center-sm u-container-align-center-xs u-container-style u-expanded-width-lg u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-group u-shape-rectangle u-group-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
+                    <div class="u-container-layout u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-container-layout-1">
+                        <div class="buttonhover u-align-center u-border-4 u-border-palette-4-base u-container-style u-group u-hover-feature u-palette-1-base u-shape-circle u-group-2">
+                            <div class="u-container-layout u-valign-middle u-container-layout-2">
+                                <h5 class="u-hover-feature u-text u-text-default u-text-palette-1-base u-text-3">
+                                    <a target="_blank" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-btn-1 buttonhover" href="https://www.linkedin.com/in/fabian-batista-965420214/">Resume</a>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="buttonhover u-align-center u-border-4 u-border-black u-container-style u-group u-hover-feature u-palette-2-base u-shape-circle u-group-3" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+                            <div class="u-container-layout u-valign-middle u-container-layout-3">
+                                <h5 class="u-hover-feature u-text u-text-default u-text-palette-2-base u-text-4">
+                                    <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-btn-2 buttonhover" href="{% url 'sobre' %}">
+                                        My Skills<br>
+                                    </a>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="u-align-center u-border-4 u-border-palette-2-base u-container-style u-grey-5 u-group u-hover-feature u-shape-circle u-group-4" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+                            <div class="u-container-layout u-container-layout-4">
+                                <h5 class="u-hover-feature u-text u-text-palette-3-base u-text-5">
+                                    <a target="_blank" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-2-base u-btn-3 " href="https://api.whatsapp.com/send?phone=5548988542989&text=Olá,%20seja%20bem-vindo">Contacts</a>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="buttonhover u-align-center u-white u-border-4 u-border-palette-1-base u-container-style u-group u-hover-feature u-shape-circle u-group-5" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction="">
+                            <div class="u-container-layout u-valign-middle u-container-layout-5">
+                                <h5 class="u-hover-feature u-text u-text-default u-text-palette-2-base u-text-6">
+                                    <a target="_blank" data-animation-direction="" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-black u-btn-4 buttonhover" href="https://github.com/Fabianbatistasilva">Projects</a>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="tec_prog">
-        <div class="tecnologia_uso">
-            <div class="foto_1">
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVwAAACRCAMAAAC4yfDAAAABC1BMVEUtS2Mqa6Mzdq3/1U8tbqb/////1Ez/zD4ydaz/yjr/11ItSWDExMT/zT//0kkucKclRl8ZQ2QcQVy4u73/4FR0gY2BjJUNQGUpZ52orrI0UGLLyspdb38hRmSSm6OZoac9V2xJYHP/0j0vYYuLgFgtT2ntwkQAPGW9v8AZaKQwapqrlVC0n1dmdoV+ipX/zTPgu01ufYouU3FkkbvxxUNCW28GOFYtWHzG1OTb5e6bttFUh7aswtgqX4yDpcdjaF1MW1/ywTu5nEp/eFfGpEegj1NOXV6ThFPQrkpyb1munFm/qVidklzYvVhYYl3gtkUAMGb/1mP/9+P/6K3/78f/34r/9d3/2XPoxU9yxF76AAAJCUlEQVR4nO2dC3eaSBSAMTG7JmAch4olKCCJCdqq0a6xj82madNNmz52t91H//8v2XnxUBAFybEt9zs9TQpC5OP2zr0z2EoSAADA94rM2fbb+KEQSruTyYwymUy6EljOA6JwMjvu12rlcq1co18YpYeXl7Mu+N0EWZr1a5VKTUCs+nopD2cS6M2ILB1XArMRuaVSqVyagd1MyJPanNoYuUTvJdjNgDzZqSzIrYXllgQPwW56ZBK3RG651+uVk+SWIHZTI89o4FZ6T54+e/qktzQtUCDvpkXuM7fP9yjPe0lySyA3JSwrlF/scV6UI3IDtxC6aZFpVuj9KuT+2kuKXMi6KekyuU+F3KeJcqFgSAmTW34u5D4vRaoFkJsdJrdWFnJL0QGtBHIzw+RWai+eEbXP+HgGaSEvuNxKrffktydeFwFyc8KTy43GyIW0kB1f7rK5BYjc7MTJhbSQE0Ju2K8/qoHcTenHUoacmwdyHBJEbmZiha4lF9U92u1tX8W3CHE3mR2vYIlcdPX4keD2ql3f9qV8c8iTfmXHpzJH4koElds+cQKuHzUhesPI3X6i1hWlGJFb/ZmwzxhdvwS7AfJsRcymkksAuz7y8aqEsKL9jci9BrmCUNwuyF3sfteO3NErGNUEO7nL3R+9RNu+qm8CuX8fciF0Gd2dLHKTcy4Bsq40P5qtllteM3L3R6/BLpFbyUHubVTuDeSFxayQJHdZh9aX62+iaQGqsYU6LJvcS7l5E5U7+h3qhflaIVNamEjN62pU7i2E7kLKzSCXpNwrJyp3H5KuJO+kkhtNC+WJ3HwbJ/e0ue1r2zqTdHKjkXvJAzcqd7/wkbs4nqWVSz8UUf+lGicXOuCFFmJltbAgt3wsS7RUiJX7rugjWgq5oQ/5eTycyOiMu42Re1J4uf0kudRv/Bo7gX6GUmpL59xtjNw3IDcxco8niYvB7bPXh8JtjNxHRR/RkuTWZtRfu76EZvPo9tRTGye38LOOy+XuHMsyatbffbh7HM/NVydQC3JjWDqg7cxIjfXy/cGDBweEn+Y5JDjO4WE1US6khSVySdxKZx+Y2F1GYDWgmiwXBrQlTUSf1K/vmdvscgs/XS7Ht781SToTbrPLvSq63PmlX08uSbjt18JtdrlF736XzYqREuzgYEO5MCsWP1nel9snDzaUC5VYtFwQWaH5cdPIhXkbKTKhy+ROpPrBxmkBUm4k6TK5XenowYZyRzeQciNJNze5kBWkSBuRl9xrCFzK/PpvTnJHb6BWoMyHbl6Ru+2r+laYy7r5yIXA9enmLhceFPMJz97kIxc+cBIQspuD3NH+J3AbQg51wUlyI4Kd6gIjZ3RzBG7nkaXZsbdoXlsq9zyOP0Kcvzo5ggo3SnjNfInc0z+bq6hD1K5kmdzYRfZtv9nvjXi5u7HL7I8gWNORMKD5S+sev0DopiNNKXYKctMBcu+R1XKD0hbkpmSV3Oro4K/DEcjNxAq51b8+7+3tfRmB3CyskLvL/+nXv0cgNwPJcp2/xT+suwtyM9BOlDv6LOT+w+TCZEI6ml/Xluu8BbnpaL5PTAtfhFwauE7hP7WTFvQp8VkxEbr/sAENHq1JS/Nx4iOkzpfPe//+R906tzCepebsY+LDzyMCSwo3Z9t+p98j7Y9rPLbvvILRLBNndys+cHLoVG8hbjPS/ESDd6lcx3l1BPk2M6j5++MD7ndRruOc3sFS5Gagevvd3TkR7MmlvzvO4ds3n5p1qME2pl1vHl19eP/xKw3f3dPzt3cnL9tgNj/a9HPUZxS2eg5iAQAA7hkEmfa+wLY2ALv3A9INowFy7wekKiD3vgC594A3im0m17btnN7PDwRC4yE3upFce6APGhbWhhD6AUhTDBPzbzeKXGxdjE1sgdwQ2DKUXOQiC4+HjQbIDYEtJatcee5/96Nyp3oH5IbYQG6xQQjhuYY2xlys3MUumJwHRzrj2I0FAeFua2ia2qCLxRaMBh1/N6mcuvRLl8rtsjJKyMXY7nSmONCGEDtRK2wSYZufPe6G/eggPNAVg6FoIjBNxfCnDjBpdTUi0jUUhtFCXO5Fx3TpgWrLvydjl5/IHXqbSPmmGuLs/sbCgKb04lXLslRDMXR2/chlCjmYqNeoT5eYdV1XEXKHFhWm0F/CGi0n6JnYifjheEB0u5Zp6vR1VsHsog5RZnVIUsR4SKSw2I2Tu5hzqVaT5I4BcW502H6TCBzQ9DpQxG1CRLc6YCfv0NcVbCYNaYaiX4gwM8n129Kacg3LptmW3x2yGQ2IW2ZZwmQbP4bcLpE02Ov0YoUuk+tfssF7sHXkGiI/s1vikv14bhsRTb9RghPRw9UCyyUemae15Hp1Lo1YEu+oRXza3mltso02CSG59CcVWS7SiIzpWnJd15fb4XJFAIuDVJ4DwnKHRqHTAmoYbNBZK+f6HRqXS6M+cEdf6+JI5BZaLv0b3lhPrrEoV+XjmndaMnxBWpiT2zJ4TUvKptRyXX+vOK0BcuPluuqGkWtC5OaZFiI5V43m3ELLHa4/oC3KXagW9Gi1UHC5VB9t0ajcQVq5NOr9qTSkQJ27KNfl8UYHNM3fuJ5cdke8g1hHQecpQa5+wb9nMzdjFHRqjAtfrukPWbFyh6LllfgNYfcB5Cp0CgYh3PKmVtCYbNQltnFqeZMw1J7LZ8bj5PI8S6fJESYn5TcH5CqGoQ/HDYvOhttsK6bTr67ZGA91NmercUE0a3TYVFicXMkm+9XxdDqgR09BLk8LJl8pUAx16pkwmXOKbnlyUYctNLTYskRYrsHloq4uFh0M3eZ7+cu9n2QUUe6FPdRdxdUbwdoXbpmqqurm2L4wDS9ykdSwdLVDM4Sm+ZWBrWla1z9KJw2I6S/8aMHrUEsr2kM2olpALL/OLf9izNdsMZHrS6GLCuzr3BJk8Ad2CA5OFH4dQkVbAV49V0UqsKItz+TFGnL1UHMApGGNWVbFL1+BdKyUi8eFm+POjVVyaWcRTOIAqUiQS4d93p9B4GZjuVw0IDUr7S3G4DYjaOw9wxTZw/o2VSvi83N5gUiExuvrkP5sWrS6P2+W+sMYzAIA8CPzPwyBw6NY190uAAAAAElFTkSuQmCC" alt="">
+        </section>
+        <footer class="u-clearfix u-footer u-palette-1-light-3" id="sec-bbb3">
+            <div class="u-clearfix u-sheet u-sheet-1">
+                <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
+                    <a class="u-social-url" title="facebook" target="_blank" href="https://www.facebook.com/fabian.batista.146/">
+                        <span class="u-icon u-social-facebook u-social-icon u-icon-1">
+                            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7288"></use>
+                            </svg>
+                            <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-7288">
+                                <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+                                <path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+      c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path>
+                            </svg>
+                        </span>
+                    </a>
+                    <a class="u-social-url" title="twitter" target="_blank" href="https://twitter.com/FabianSilvaDev">
+                        <span class="u-icon u-social-icon u-social-twitter u-icon-2">
+                            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e71b"></use>
+                            </svg>
+                            <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-e71b">
+                                <circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle>
+                                <path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
+      c6.3,0,12.1-2.1,16.7-5.7c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1
+      c0-0.1,0-0.1,0-0.2c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14
+      c-0.2-1-0.3-2-0.3-3.1c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4
+      c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path>
+                            </svg>
+                        </span>
+                    </a>
+                    <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/fabian_batista_silva/">
+                        <span class="u-icon u-social-icon u-social-instagram u-icon-3">
+                            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-32ed"></use>
+                            </svg>
+                            <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-32ed">
+                                <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+                                <path fill="#FFFFFF" d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+      z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z"></path>
+                                <path fill="#FFFFFF" d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z"></path>
+                                <path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+      C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+      c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
+                            </svg>
+                        </span>
+                    </a>
+                    <a class="u-social-url" title="linkedin" target="_blank" href="https://www.linkedin.com/in/fabian-batista-965420214/">
+                        <span class="u-icon u-social-icon u-social-linkedin u-icon-4">
+                            <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-8c71"></use>
+                            </svg>
+                            <svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-8c71">
+                                <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+                                <path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
+      C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5
+      H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
             </div>
-            <div class="foto_2">
-                <img src="https://enotas.com.br/blog/wp-content/uploads/2021/02/GitHub.jpg" alt="">
-            </div>
-            <div class="foto_3">
-                <img src="https://miro.medium.com/max/1400/1*ahpxPO0jLGb9EWrY2qQPhg.jpeg" alt="">
-            </div>
-            <div class="foto_4">
-                <img src="https://miro.medium.com/max/1200/0*aurC6Id6dEJPYry1.png" alt="">
-            </div>
-            <div class="foto_5">
-                <img src="https://ayltoninacio.com.br/img/p/32w750.jpg" alt="">
-            </div>
-        </div>
-    </div>
-    <div class="paginacao">
-        <div class="conteudo_paginacao">
-            <a class="cta" href="{% url 'sobre'%}">
-            <span>Sobre</span>
-            <span>
-                <svg width="56px" height="33px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                        <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                        <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
-                    </g>
-                </svg>
-            </span> 
-            </a>
-        </div>
-        <div class="conteudo_paginacao">
-            <a class="cta" href="{% url 'oferta'%}">
-            <span>0ferta</span>
-            <span>
-                <svg width="56px" height="33px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                        <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
-                        <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
-                    </g>
-                </svg>
-            </span> 
-            </a>
-        </div>
-    </div>
-</div>
-
-{%endblock%}
+        </footer>
+    </body>
+</html>
