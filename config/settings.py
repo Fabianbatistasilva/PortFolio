@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 from pathlib import Path
 import os
 from dotenv import load_dotenv
-import django_heroku
 
 # Carrega as variáveis de ambiente do arquivo .env
 load_dotenv()
@@ -44,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'portfolio',
     'fontawesomefree',
-    'django_heroku',
 ]
 
 MIDDLEWARE = [
@@ -143,5 +141,3 @@ EMAIL_USE_TLS= os.environ.get('EMAIL_USE_TLS')
 EMAIL_PORT =os.environ.get('EMAIL_PORT')
 EMAIL_HOST = os.environ.get('EMAIL_HOST')
 SERVER_EMAIL =EMAIL_HOST_USER
-
-django_heroku.settings(locals())
