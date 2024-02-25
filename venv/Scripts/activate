@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\curri\OneDrive\Documents\VSCode\Portfolio\venv"
+VIRTUAL_ENV="C:\Users\Fabian\VSCODE\Portfolio\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

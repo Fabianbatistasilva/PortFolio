@@ -299,6 +299,39 @@
       animation: color_anim 1s infinite 0.4s;
   }
   
+
+  /* Project */
+  .project_port{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .div_project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+  }
+  .links_project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .links_projectTranslado{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap:3rem;
+  }
+  .gridTranslado{
+    width: 100%;
+    
+  }
+
   /* SVG animations */
   
   @keyframes color_anim {
