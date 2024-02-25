@@ -1,0 +1,154 @@
+body{
+    margin:0px;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, rgba(245,245,245,1) 2%, rgba(0,0,0,0.8785889355742297) 54%, rgba(101,101,101,1) 92%);
+}
+
+/* Estilo quando o mouse estiver sobre os links */
+
+.nav_bar_base,.nav_bar_base > nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: black;
+    height:5rem;
+    font-size: 20px;
+    border-bottom: 1.7px solid #006bb3;
+}
+
+.nav_bar_base > nav > .opc_nav{
+    width: 18rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav_bar_base > nav > .opc_nav > a {
+    color: white;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav_bar_base > nav > .opc_nav > a:hover {
+    animation: nav_hover 1s infinite 0.6s;
+}
+
+.cont_base{
+    width:  100%;
+}
+.img_logo_fabian{
+    display: none;
+    width: 4.5rem;
+    height: 80%;
+}
+.img_logo_fabian >a{
+    width: 4.5rem;
+    height:100%;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.img_logo_fabian >a > img{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px #006bb3 solid;
+}
+.logo_fabian{
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+}
+.logo_fabian > a{
+    color:  #006bb3;
+    text-decoration: none;
+    font-family: 'Great Vibes', cursive  ;
+}
+.logo_fabian > a:hover{
+    color: white;
+}
+.logo_fabian > a >h2{
+    border-bottom:1.5px solid white;
+    color: #006bb3;
+}
+.burger_detls{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height:4rem;
+    font-size: 20px;
+}
+.burger_detls > summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%; 
+    list-style: none;
+    font-size:42px;
+    background-color:rgba(0, 0, 0, 0.456) ;
+    color:#006bb3;
+    padding:2px;
+}
+.burger_detls > a{
+    padding:2px;
+    text-align:center;
+    width: 6rem;
+    height:3rem;
+    font-size:20px;
+    color:white;
+    text-decoration: none;
+    position: relative;
+    background-color:rgba(0, 0, 0, 0.500) ;
+}
+.burger_detls > a:hover{
+    color:#0090f0;
+}
+@keyframes nav_hover {
+    0% {
+        color: #006bb3;
+        border-bottom: 2px solid white;
+    }
+    50% {
+        color: goldenrod;
+        border-bottom: 1px solid white;
+    }
+    100% {
+        color: rgba(255, 149, 0, 0.376);
+        border-bottom: 2px solid white;
+    }
+}
+
+@media (max-width:900px) {
+    .nav_bar_base > nav > .opc_nav{
+        display: none;
+    }
+    .burger_detls{
+        display: flex;
+    }
+}
+@media (max-width:666px){
+    .img_logo_fabian {
+        display: flex;
+    }
+    .img_logo_fabian > img{
+        display: flex;
+    }
+    .logo_fabian{
+        display: flex;
+        align-items: center;
+        margin-left: 5rem;
+    }
+    .logo_fabian > a{
+        color: #006bb3;
+        text-decoration: none;
+        font-family: 'Great Vibes', cursive  ;
+        display: none;
+    }
+}
