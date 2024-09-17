@@ -47,21 +47,56 @@
     </head>
     <body data-home-page="Página-Inicial.html" data-home-page-title="Página Inicial" class="u-body u-xl-mode" data-lang="pt">
         {% include 'nav.html' %}
-        <section class="u-align-center u-clearfix u-palette-1-light-3 u-section-1" id="carousel_12cc">
+        <section class="u-align-center u-clearfix u-palette-1-light-3 u-section-1" id="resume_section">
             <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-                <img class="u-border-8 u-border-palette-5-dark-2 u-image u-image-circle u-image-1" src="https://assets.nicepagecdn.com/dc7a5949/5383162/images/minhafoto.jpg" alt="" data-image-width="400" data-image-height="400" data-animation-name="customAnimationIn" data-animation-duration="1250" data-animation-delay="500">
-                <h1 class="u-align-center u-text u-text-palette-1-base u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="250">F​abian Batista da Silva</h1>
-                <p class="u-align-center u-text u-text-2" data-animation-name="customAnimationIn" data-animation-duration="1500" data-animation-delay="500">
-                    Resumo das Experiências Profissionais: <br>
+                <!-- Imagem -->
+                <img class="u-border-8 u-border-palette-5-dark-2 u-image u-image-circle u-image-1" 
+                     src="https://assets.nicepagecdn.com/dc7a5949/5383162/images/minhafoto.jpg" 
+                     alt="Minha Foto" 
+                     data-image-width="400" 
+                     data-image-height="400" 
+                     data-animation-name="customAnimationIn" 
+                     data-animation-duration="1250" 
+                     data-animation-delay="500">
+                
+                <!-- Título -->
+                <h1 class="u-align-center u-text u-text-palette-1-base u-text-1" 
+                    data-animation-name="customAnimationIn" 
+                    data-animation-duration="1500" 
+                    data-animation-delay="250">
+                    Fabian Batista da Silva
+                </h1>
+            
+                <!-- Texto do Resumo -->
+                <p class="u-align-center u-text u-text-2" 
+                   data-animation-name="customAnimationIn" 
+                   data-animation-duration="1500" 
+                   data-animation-delay="500">
+                    <strong>Resumo das Experiências Profissionais:</strong><br><br>
+                    
+                    Tenho ampla experiência no desenvolvimento de soluções de automação e atendimento com inteligência artificial, com ênfase em melhorar a comunicação e a eficiência operacional. Minha trajetória inclui o design e implementação de sistemas que integram plataformas e ferramentas utilizadas por empresas, otimizando a interação com clientes e o gerenciamento de processos.<br><br>
+                    
+                    Trabalhei no desenvolvimento de soluções que utilizam inteligência artificial para automatizar e aprimorar a comunicação com clientes. Isso inclui a criação e integração de chatbots e assistentes virtuais que utilizam tecnologias avançadas para entender e responder às necessidades dos usuários de forma eficaz.<br><br>
+                    
+                    Entre minhas principais responsabilidades estão:
+                    <ul class="u-align-center u-text u-text-2">
+                        <li><strong>Desenvolvimento de Chatbots:</strong> Criação de chatbots inteligentes que se integram com plataformas de mensagens como WhatsApp, otimizando a comunicação com clientes e melhorando a eficiência do atendimento.</li>
+                        <li><strong>Automação de Processos:</strong> Implementação de automações que simplificam e agilizam fluxos de trabalho, utilizando ferramentas e APIs para conectar diferentes sistemas e plataformas.</li>
+                        <li><strong>Integração de Sistemas:</strong> Desenvolvimento de soluções que conectam ferramentas e sistemas utilizados por empresas, garantindo uma comunicação fluida e a troca eficiente de informações entre diferentes plataformas.</li>
+                        <li><strong>Suporte e Treinamento:</strong> Oferecimento de suporte técnico para a implementação e manutenção de sistemas automatizados, além de treinamento para usuários sobre o uso eficaz das ferramentas desenvolvidas.</li>
+                    </ul>
                     <br>
-                    Tenho experiência como suporte técnico em equipamentos de topografia. Durante esse período, adquiri conhecimentos práticos e habilidades relacionadas ao Produto, lidando com a resolução de problemas e assistência aos clientes. <br>
-                    <br>
-                    Além disso, tive a oportunidade de aplicar meus conhecimentos em informática e programação, especialmente durante meu curso de Jovem Programador no Senac-Palhoça. Durante o curso, desenvolvi projetos em equipe, utilizando linguagens como Python, Django, HTML, CSS e JavaScript, o que contribuiu para aprimorar minhas habilidades de desenvolvimento web. <br>
-                    <br>Minhas experiências profissionais me permitiram desenvolver competências valiosas, como trabalho em equipe, resolução de problemas e adaptabilidade. Estou entusiasmado em continuar crescendo profissionalmente e explorando novas oportunidades que me permitam utilizar minhas habilidades e conhecimentos adquiridos até o momento.
-        
+                    
+                    Possuo habilidades avançadas em <span class="u-align-center u-text u-text-2"><strong>Python, JavaScript, n8n</strong> e bancos de dados como <strong>SQL e PostgreSQL</strong>, aplicando essas tecnologias para criar soluções robustas e escaláveis.</span><br>
+                    <p class="u-align-center u-text u-text-2">
+                        Minha experiência com inteligência artificial e automação me permite desenvolver sistemas que melhoram a experiência do usuário e a eficiência operacional.<br>
+                    
+                        Estou sempre buscando novos desafios e oportunidades para aplicar e expandir minhas habilidades em desenvolvimento web e automação, com foco em resultados que atendam às necessidades específicas dos clientes e proporcionem uma experiência de usuário superior.
+                    </p>
+                    
                 </p>
             </div>
-        </section>
+        </section>        
         <section class="u-align-center u-clearfix u-palette-1-light-3 u-section-1">
             <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
                 <h2>Projetos</h2>
@@ -106,9 +141,14 @@
                     </div>
                     <div class="div_project">
                         <label for="">Landing Pages a Clientes</label>
-                        <a class="links_project" href="">
-                            <img class="img-fluid" src="{% static 'img/tpville.png' %}" alt="">
-                        </a>
+                        <div style="display: flex; gap: 20px; align-items: center; justify-content: center;">
+                            <a class="links_project" href="https://topoville.com.br/" target="_blank">
+                                <img class="img-fluid"  style="width: 100%; height: 60%;" src="{% static 'img/tpville.png' %}" alt="Projeto TP Ville">
+                            </a>
+                            <a class="links_project" href="https://academiapitbull.com.br/" target="_blank">
+                                <img class="img-fluid" style="width: 100%; height: 60%;" src="{% static 'img/acad1.png' %}" alt="Academia PitBull">
+                            </a>
+                        </div>
                         <label for="">Tecnologias Usadas</label>
                         <ul class="list-inline">
                                 <li class="list-inline-item">WordPress</li>
